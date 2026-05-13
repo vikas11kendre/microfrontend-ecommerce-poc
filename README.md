@@ -228,7 +228,7 @@ Don't just look at the final code—look at how the AI was directed.
 1. **[View the initial `spec.md`](./spec.md)**: The architectural requirements after using grill me skill.
 2. **Explore the Skills**: See how the agent was forced to interrogate the spec using [custom skills](./.claude/skills/).
 3. **[View the final `prd.md`](./prd.md)**: The resulting frozen scope that guided the entire Micro Frontend build.
-4. **[View the task or ticket `(similar to jira ticket)`]** [issues/task](.\issues\01-phase0-0.1-init-monorepo-root-afk.md): The resulting frozen scope that guided the entire Micro Frontend build.
+4. **[View the task or ticket `(similar to jira ticket)`]** [issues/task](./issues/01-phase0-0.1-init-monorepo-root-afk.md): The resulting frozen scope that guided the entire Micro Frontend build.
 
 <details open>
 
