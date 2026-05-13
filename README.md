@@ -197,7 +197,7 @@ Each skill below uses the same three-line treatment: **What** / **Why we use it*
 
 </details>
 
-<details open>
+
 <summary><h3 style="display:inline">🔥 &nbsp; Step 1 — <a href="./.claude/skills/grill-me"><code>/grill-me</code></a></h3></summary>
 
 - **What** &nbsp;·&nbsp; Agent interrogates the spec one question at a time, walking the design tree branch by branch, recommending an answer for each. Decisions pinned down inline.
@@ -221,6 +221,16 @@ Each skill below uses the same three-line treatment: **What** / **Why we use it*
 - **What** &nbsp;·&nbsp; Breaks `prd.md` into **vertical tracer-bullet slices** under `issues/`, phase-tagged (Phase 0 → Phase 12), each with explicit acceptance criteria.
 - **Why** &nbsp;·&nbsp; Monolithic plans drown an agent's context. Small, independent tickets keep each agent run short, focused, and reviewable.
 - **How it helps** &nbsp;·&nbsp; Any AFK ticket can be picked up cold by a fresh agent (or a beginner dev) and shipped end-to-end. **~85 tickets** here.
+
+### 🛠️ Explore the Agentic Pipeline
+
+Don't just look at the final code—look at how the AI was directed. 
+1. **[View the initial `spec.md`](./spec.md)**: The architectural requirements after using grill me skill.
+2. **Explore the Skills**: See how the agent was forced to interrogate the spec using [custom skills](./.claude/skills/).
+3. **[View the final `prd.md`](./prd.md)**: The resulting frozen scope that guided the entire Micro Frontend build.
+4. **[View the task or ticket `(similar to jira ticket)`]** [issues/task](.\issues\01-phase0-0.1-init-monorepo-root-afk.md): The resulting frozen scope that guided the entire Micro Frontend build.
+
+<details open>
 
 **Each ticket is tagged:**
 
