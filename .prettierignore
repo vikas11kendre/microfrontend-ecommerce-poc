@@ -1,0 +1,16 @@
+node_modules
+.claude
+.codex
+.next
+.turbo
+dist
+build
+coverage
+playwright-report
+test-results
+graphify-out
+package-lock.json
+issues
+prd.md
+sepc.md
+AGENTS.md
