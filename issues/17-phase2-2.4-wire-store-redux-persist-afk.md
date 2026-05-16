@@ -24,4 +24,4 @@ Refs: `sepc.md` §8, §9, §20, §21.
 
 ## Status
 
-Pending
+Completed

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  "plugin": [
+    ".opencode/plugins/graphify.js"
+  ],
+
+  "default_agent": "build",
+
+  "permission": {
+    "*": "ask",
+
+    "skill": {
+      "*": "ask",
+
+      "graphify": "allow",
+      "frontend-design": "allow",
+      "vercel-react-best-practices": "allow",
+      "vercel-composition-patterns": "allow",
+      "web-design-guidelines": "allow",
+      "webapp-testing": "allow",
+      "review": "allow",
+      "excalidraw-diagram": "allow",
+
+      "deploy-to-vercel": "ask",
+      "vercel-cli-with-tokens": "ask",
+      "vercel-react-native-skills": "ask",
+      "vercel-react-view-transitions": "ask",
+      "to-prd": "ask",
+      "to-issues": "ask",
+      "issues-batch-executor": "ask",
+      "customize-opencode": "ask",
+      "find-skills": "ask",
+      "grill-me": "ask",
+      "caveman": "ask",
+      "note-drafting-assistant": "ask"
+    },
+
+    "serena_*": "allow",
+
+    "read": "allow",
+    "edit": "ask",
+    "grep": "deny",
+    "glob": "ask",
+
+    "bash": {
+      "*": "ask",
+
+      "graphify *": "allow",
+      "serena *": "allow",
+
+      "git status*": "allow",
+      "git diff*": "allow",
+      "git log*": "allow",
+
+      "npm test*": "ask",
+      "npm run*": "ask",
+      "npm install*": "ask",
+      "npx playwright*": "ask",
+
+      "pnpm test*": "ask",
+      "pnpm run*": "ask",
+      "pnpm install*": "ask",
+
+      "grep *": "deny",
+      "rg *": "deny",
+      "ripgrep *": "deny",
+      "findstr *": "deny",
+      "Select-String *": "deny"
+    }
+  },
+
+  "mcp": {
+    "serena": {
+      "type": "local",
+      "command": [
+        "serena",
+        "start-mcp-server",
+        "--context",
+        "ide",
+        "--project-from-cwd"
+      ],
+      "timeout": 60000,
+      "enabled": true
+    }
+  },
+
+  "agent": {
+    "build": {
+      "prompt": "Follow AGENTS.md. For codebase questions, read graphify-out/GRAPH_REPORT.md before reading source files. Use Graphify for architecture-level understanding. Use Serena MCP for symbol navigation, references, declarations, renaming, and refactoring. Prefer Serena tools over grep/read_file for code navigation. Use relevant OpenCode skills only when they clearly match the task. Do not use grep, rg, findstr, Select-String, or raw shell search for code navigation unless Graphify and Serena fail."
+    }
+  }
+}

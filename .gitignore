@@ -1,10 +1,7 @@
 /graphify-out
 
 .codex/
-
-AGENTS.md
-
-/node_modules
+**/node_modules/
 /.next
 /.turbo
 /dist
@@ -12,6 +9,14 @@ AGENTS.md
 /coverage
 /playwright-report
 /test-results
+.playwright-mcp/
+**/.vite/
+**/*.tsbuildinfo
+
+# Per-package build outputs
+packages/*/.next
+packages/*/dist
+packages/*/build
 .env
 .env.local
 .env.*.local
@@ -23,3 +28,4 @@ yarn-error.log*
 .graphify_uncached.txt
 
 .graphifyignore
+.claude/settings.local.json

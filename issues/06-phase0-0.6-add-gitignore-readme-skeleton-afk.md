@@ -22,4 +22,4 @@ Refs: `sepc.md` §22, §24.
 
 ## Status
 
-Pending
+Completed

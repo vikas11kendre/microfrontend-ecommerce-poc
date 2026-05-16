@@ -8,6 +8,7 @@
     ".": "./src/index.ts"
   },
   "scripts": {
+    "test": "vitest run --config ../../vitest.config.ts --dir . --passWithNoTests",
     "type-check": "tsc --noEmit -p tsconfig.json"
   },
   "peerDependencies": {
